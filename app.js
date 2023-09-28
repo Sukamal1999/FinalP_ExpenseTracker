@@ -14,7 +14,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 const usersRoute = require('./routes/users');
 app.use('/users', usersRoute);
 
-// Error handling middleware (place it at the end)
+const expenseRoutes = require('./routes/expenseRoutes');
+app.use('/expenses', expenseRoutes);
+
+// Custom error handling middleware
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('Internal Server Error');

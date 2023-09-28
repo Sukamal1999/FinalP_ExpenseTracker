@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <h1>Add Expense</h1>
+    
+    <!-- Expense Form -->
+    <form id="expenseForm">
+        <div>
+            <label for="amount">Choose Expense Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+        </div>
+        <div>
+            <label for="description">Choose Description:</label>
+            <input type="text" id="description" name="description" required>
+        </div>
+        <div>
+            <label for="category">Choose a Category:</label>
+            <select id="category" name="category">
+                <option value="food">Food</option>
+                <option value="movie">Movie</option>
+                <option value="travel">Travel</option>
+                <option value="shopping">Shopping</option>
+            </select>
+        </div>
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <button id ="rzp-button1"> Buy Premium</button>
+    <script src ="https://checkout.razorpay.com/v1/checkout.js" ></script>
+
+    <!-- Display Expenses -->
+    <h2>Expenses:</h2>
+    <ul id="expensesList"></ul>
+
+    <!-- Logout Button -->
+    <button id="logoutButton">Logout</button>
+
+    <!-- Link to external JavaScript file -->
+    <script src="/js/expense.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+</body>
+</html>

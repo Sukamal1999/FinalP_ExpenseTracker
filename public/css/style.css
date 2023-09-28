@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image for the body */
+body {
+    background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the URL of your background image */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #00aa00; /* Green background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a 3D shadow effect */
+}
+
+/* Style the main content */
+.links {
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Style the links */
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #fff; /* White background color */
+    color: #00aa00; /* Green text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a 3D shadow effect */
+}
+
+/* Change link color on hover */
+.links a:hover {
+    background-color: #00dd00; /* Lighter green on hover */
+}
+
+/* Apply some responsive styles */
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+    .links a {
+        font-size: 16px;
+    }
+}
+
+/* Styles for the Login page */
+body.login {
+    background-image: url(/img/login.jpg); /* Replace 'your-login-image.jpg' with the URL of your login page background image */
+}
+
+header.login {
+    background-color: #00aa00; /* Green background color */
+}
+
+form {
+    background-color: #fff; /* White background color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a 3D shadow effect */
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #00aa00; /* Green background color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a 3D shadow effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #00dd00; /* Lighter green on hover */
+}
+.container {
+    background-image: url('path/to/your-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the image */
+    background-color: #f2f2f2; /* Background color if the image is transparent or doesn't cover the entire container */
+    /* Other background properties can be added here */
+}
